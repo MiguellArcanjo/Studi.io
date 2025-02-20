@@ -163,3 +163,102 @@ button {
     opacity: 0;
   }
 }
+
+@media (min-width: 1150px) and (max-width: 1500px) {
+  .title h2 {
+    font-size: 40px;
+    width: 35ch;
+    text-wrap: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(20);
+  }
+  
+}
+
+@media (min-width: 770px) and (max-width: 1150px) {
+  .title h2 {
+    font-size: 25px;
+  }
+
+  .prompt-box {
+    padding: 6px 15px 6px 15px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 768px) {
+  .title h2 {
+    font-size: 20px;
+  }
+
+  .prompt-box {
+    padding: 6px 15px 6px 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .containerBox {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px)  {
+
+  .title h2 {
+    font-size: 0.8rem;
+    animation: none;
+    margin-right: 10px;
+  }
+
+  .prompt-box {
+    padding: 6px 15px 6px 15px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .containerBox {
+    flex-direction: column;
+  }
+
+
+  .conversations {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    height: calc(100% - 90px); 
+    width: 100%; 
+    margin-top: 20px;
+    overflow-y: auto; 
+    padding-bottom: 10px;
+  }
+  
+  input {
+    padding: 15px;
+    width: 60%;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #2a2a2a;
+    color: #F9F9F9;
+  }
+  
+  button {
+    border-radius: 10px;
+    padding: 15px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    background-color: #2a2a2a;
+    color: #F9F9F9;
+  }
+
+  .container-form {
+    margin-top: 20px;
+  }
+
+  .prompt-boxes {
+    margin-top: 20px;
+  }
+}
