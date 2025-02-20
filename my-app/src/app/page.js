@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { generateContent } from "@/api/api";
+import { generateContent, generateContentMath } from "@/api/api";
 import LoadingDots from "@/components/LoadingDots/LoadingDots";
 import "../styles/page.css";
 
@@ -13,10 +13,10 @@ function App() {
 
   const predefinedPrompts = [
     { id: 1, title: "Matemática", prompt: "Vamos falar sobre Matemática." },
-    { id: 2, title: "História", prompt: "Conte-me sobre um evento histórico importante" },
-    { id: 3, title: "Ciências", prompt: "Explique uma descoberta científica recente" },
-    { id: 4, title: "Literatura", prompt: "Analise uma obra literária famosa" },
-    { id: 5, title: "Tecnologia", prompt: "Discuta uma tecnologia emergente" },
+    { id: 2, title: "História", prompt: "Vamos falar sobre História." },
+    { id: 3, title: "Ciências", prompt: "Vamos falar sobre Ciências." },
+    { id: 4, title: "Literatura", prompt: "Vamos falar sobre Literatura." },
+    { id: 5, title: "Tecnologia", prompt: "Vamos falar sobre Tecnologia." },
   ];
 
   const messagesEndRef = useRef(null);
@@ -79,6 +79,7 @@ function App() {
 
   return (
     <div className="App">
+      <h2 className="titleStud"><span>Studi</span>.io</h2> 
       {!showInput && (
         <div className="prompt-boxes">
           <div className="title">

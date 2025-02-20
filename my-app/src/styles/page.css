@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .container-form form{
@@ -49,6 +50,17 @@ button {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  color: #2a2a2a;
+}
+
+.titleStud {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #f0f0f0;
+}
+
+.titleStud span {
   color: #2a2a2a;
 }
 
